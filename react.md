@@ -90,3 +90,54 @@ Class之间可以通过**extends关键字实现继承**，这比ES5的通过修�
 ES6的继承机制，实质是先创造父类的实例对象this（所以必须先调用super方法），然后再用子类的构造函数修改this。
 
 P.S 如果你写react的话，就会发现以上三个东西在最新版React中出现得很多。创建的每个component都是一个继承React.Component的类。
+
+### arrow function
+
+这个恐怕是ES6最最常用的一个新特性了，用它来写function比原来的写法要简洁清晰很多:
+
+	function(i){ return i + 1; } //ES5
+	(i) => i + 1 //ES6
+
+但现在我们有了箭头函数，就不需要这么麻烦了：
+
+	class Animal {
+	    constructor(){
+	        this.type = 'animal'
+	    }
+	    says(say){
+	        setTimeout( () => {
+	            console.log(this.type + ' says ' + say)
+	        }, 1000)
+	    }
+	}
+	 var animal = new Animal()
+	 animal.says('hi')  //animal says hi
+
+当我们使用箭头函数时，函数体内的this对象，就是定义时所在的对象，而不是使用时所在的对象。
+
+并不是因为箭头函数内部有绑定this的机制，实际原因是箭头函数根本没有自己的this，它的this是继承外面的，因此内部的this就是外层代码块的this。
+
+### template string
+
+这个东西也是非常有用，当我们要插入大段的html内容到文档中时，传统的写法非常麻烦，所以之前我们通常会引用一些模板工具库，比如mustache等等。
+
+	$("#result").append(
+	  "There are <b>" + basket.count + "</b> " +
+	  "items in your basket, " +
+	  "<em>" + basket.onSale +
+	  "</em> are on sale!"
+	);
+
+我们要用一堆的'+'号来连接文本与变量，而使用ES6的新特性模板字符串``后，我们可以直接这么来写：
+
+	$("#result").append(`
+	  There are <b>${basket.count}</b> items
+	   in your basket, <em>${basket.onSale}</em>
+	  are on sale!
+	`);
+
+用反引号（`）来标识起始，用${}来引用变量，而且所有的空格和缩进都会被保留在输出之中，是不是非常爽？！
+
+### destructuring
+
+ES6允许按照一定模式，从数组和对象中提取值，对变量进行赋值，这被称为解构（Destructuring）。
