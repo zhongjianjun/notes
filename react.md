@@ -141,3 +141,51 @@ P.S 如果你写react的话，就会发现以上三个东西在最新版React中
 ### destructuring
 
 ES6允许按照一定模式，从数组和对象中提取值，对变量进行赋值，这被称为解构（Destructuring）。
+
+	let cat = 'ken'
+	let dog = 'lili'
+	let zoo = {cat: cat, dog: dog}
+	console.log(zoo)  //Object {cat: "ken", dog: "lili"}
+
+用ES6完全可以像下面这么写：
+	
+	let cat = 'ken'
+	let dog = 'lili'
+	let zoo = {cat, dog}
+	console.log(zoo)  //Object {cat: "ken", dog: "lili"}
+
+反过来可以这么写：
+
+	let dog = {type: 'animal', many: 2}
+	let { type, many} = dog
+	console.log(type, many)   //animal 2
+
+### default, rest
+
+default很简单，意思就是默认值。大家可以看下面的例子，调用animal()方法时忘了传参数，传统的做法就是加上这一句type = type || 'cat'来指定默认值。
+
+	function animal(type){
+	    type = type || 'cat'  
+	    console.log(type)
+	}
+	animal()
+
+如果用ES6我们而已直接这么写：
+
+	function animal(type = 'cat'){
+	    console.log(type)
+	}
+	animal()
+
+最后一个rest语法也很简单，直接看例子：
+	
+	function animals(...types){
+	    console.log(types)
+	}
+	animals('cat', 'dog', 'fish') //["cat", "dog", "fish"]
+
+而如果不用ES6的话，我们则得使用ES5的arguments。
+
+### 总结
+
+以上就是ES6最常用的一些语法，可以说这20%的语法，在ES6的日常使用中占了80%...
