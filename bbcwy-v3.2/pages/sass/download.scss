@@ -9,7 +9,7 @@
 .download-box .infor-list{color:#727272;font-size:14px;line-height:36px;}
 .download-box .font-c{color:#f7372c;}
 .download-box .site-icon{font-size:14px;}
-.download-box .down-btn-box{padding:10px 0 40px;}
+.download-box .down-btn-box{padding:10px 0 100px;position: relative;margin-bottom: 30px;}
 .download-box .down-btn-box .down-btn{display:block;width:175px;height:56px;line-height:56px;text-align:center;color:#fff;font-size:20px;float:left;margin-right:8px;}
 .download-box .down-btn-box .btn-l{background-color:#f7372c}
 .download-box .down-btn-box .btn-r{background-color:#199bd6}
@@ -23,7 +23,7 @@
 .precautions-box .note-list{color:#818181;font-size:14px;line-height:28px;}
 
 /*合作账单登录*/
-.input-main-r{padding-bottom: 30px;}
+.input-main-r{position: absolute;left: 0;bottom: 0;}
 .input-main-r .link-box{color:#727272;font-size: 18px;}
 .input-main-r .cooper-tit{color:#009edf;padding: 0px 0 6px}
 .input-main-r .link-list{display: block;float: left;margin-right: 12px;}
