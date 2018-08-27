@@ -7,4 +7,4 @@
 /*热门搜索*/
 .hot-search .link{margin-right:8px;padding:0 8px;margin-bottom:14px;}
 /*话题分类*/
-.topic-class .link{width:73px;margin-right:14px;text-align:center;}
+.topic-class .link{width:73px;margin-right:14px;text-align:center;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
