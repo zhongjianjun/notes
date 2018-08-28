@@ -5,4 +5,6 @@
 .page-main .omitted{display: none;}
 
 .page-main .page-num:hover,.page-main .home-page:hover,.page-main .prev-page:hover,.page-main .next-page:hover,.page-main .last-page:hover{color:#f7372c;border-color:#f7372c;}
+.page-main .page-total{font-size: 14px;color: #666;padding-right: 8px;}
+.page-main .page-total .num{color: #f7372c;}
 /*分页 end*/

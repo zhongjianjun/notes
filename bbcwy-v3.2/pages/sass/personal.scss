@@ -38,9 +38,9 @@
 
 /*账户设置*/
 .min-h{min-height:630px;}
-.content-box{}
+.content-box{background-color: #fff;}
 .content-box .module-nav{border-bottom:1px solid #ddd;}
-.content-box .link-list{float:left;margin:0 10px -1px;position:relative}
+.content-box .link-list{float:left;margin:0 16px -1px 0;position:relative}
 .content-box .link-list .link{display:block;color: #727272;font-size:18px;padding:6px 4px;}
 .content-box .link-list.active{border-bottom:3px solid #ff0000;}
 .content-box .link-list.active .link{color: #f7372c;}
@@ -200,17 +200,19 @@ cursor: pointer;}
 /*上传资源 end*/
 
 /*资源管理*/
-
-.filter-box{font-size:14px;margin-top:0;margin-bottom:30px;}
+.personal-r .module{padding: 40px 20px;}
+.filter-box{font-size:14px;margin-top:0;margin-bottom:14px;}
+.filter-box .filter-left{line-height: 30px;}
 .filter-box .filter-name{color:#727272;}
+.filter-box .filter-name:hover{color: #f7372c;}
 .filter-box .slash{padding:0 6px;}
-.filter-box .select{}
-.filter-box .station-box{position: relative;}
-.filter-box .s-input{width:150px;}
-.filter-box .s-search{position: absolute;right:0;top:-7px;display:block;padding:0 8px;height:28px;line-height:28px;}
+.filter-box .filter-nav.select .filter-name{color: #f7372c;}
+.filter-box .station-box{position: relative;display: inline-block;}
+.filter-box .s-input{width:243px;height: 28px;font-size: 14px;}
+.filter-box .s-search{position: absolute;right:0;top:0px;display:block;padding:0 8px;height:28px;line-height:28px;}
 .filter-box .site-icon{color:#737373;font-size:18px;}
-
-.reso-list-box{}
+.filter-cont .reso-list-box{display: none;}
+.filter-cont .reso-list-box.select{display: block;}
 .reso-list-box .topic-list{}
 .reso-list-box .topic-l{position: relative;}
 .reso-list-box .hook{position: absolute;left:0;top:0;width:20px;height:20px;line-height:20px;text-align:center;border:1px solid #ff0000;background-color:#f3f3f3;display:none;}
@@ -220,6 +222,36 @@ cursor: pointer;}
 
 .topic-box{}
 .topic-box .topic-l{width:195px;height:147px;border:none;}
+
+.reso-cont{width: 100%;margin-bottom: 30px;}
+.reso-cont .cont-tit{background-color: rgb(234, 234, 234);height: 35px;}
+.reso-cont .cont-tit th{font-size: 14px;text-align: center;color: #727272;}
+.reso-cont .cont-info{border-bottom: 1px solid rgb(234, 234, 234);text-align: center;}
+.reso-cont .cont-info:hover{background-color: rgb(245, 245, 245);border-bottom-color: rgb(245, 245, 245)}
+.reso-cont .cont-info td{padding: 10px 0;color: #727272;}
+.reso-cont .cont-info .c-blue{color: #3ca5f6;}
+.reso-cont .line{padding: 0 6px;}
+.reso-cont .link{}
+.reso-cont .link:hover{color: #f7372c;}
+
+.reso-cont .cont-info td.news-box{font-size: 14px;text-align: left;
+  display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    padding: 10px 6px;
+}
+.news-box .news-info{
+  -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    line-height: 20px;
+}
+.news-box .site-icon{margin-right:6px;font-size:16px;}
+.news-box .doc{color:#2951b3;}
+.news-box .xls{color:#327051;}
+.news-box .pdf{color:#bc4040;}
+.news-box .ppt{color:#973a33;}
+.news-box .rtf{color:#6289bc;}
 /*资源管理 end*/
 
 /*私信*/
