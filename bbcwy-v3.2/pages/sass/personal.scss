@@ -1,6 +1,8 @@
 @import 'module/page';//分页
 @import 'module/topic';//列表内容
 @import 'module/personal-nav';//左侧列表
+@import 'module/tab-switch';//tab-switch
+
 /*主页*/
 .personal-box{padding-top:20px;padding-bottom:30px}
 /*主页左*/
@@ -13,7 +15,7 @@
 /*主页右*/
 .personal-r{width: 960px}
 
-.personal-r .module{background-color:#fff;margin-bottom:4px;padding:40px;}
+.personal-r .module{background-color:#fff;margin-bottom:4px;padding:40px 20px;}
 
 .person-info{}
 .person-info .info-l{float:left;padding-right:40px;padding-top:10px;}
@@ -38,12 +40,6 @@
 
 /*账户设置*/
 .min-h{min-height:630px;}
-.content-box{background-color: #fff;}
-.content-box .module-nav{border-bottom:1px solid #ddd;}
-.content-box .link-list{float:left;margin:0 16px -1px 0;position:relative}
-.content-box .link-list .link{display:block;color: #727272;font-size:18px;padding:6px 4px;}
-.content-box .link-list.active{border-bottom:3px solid #ff0000;}
-.content-box .link-list.active .link{color: #f7372c;}
 .content-box .link-drop-down{position:absolute;left:0;top:38px;background-color:#f7372c;width:100%;text-align:center;display:none;padding:6px 0}
 .content-box .down-link{color:#fffefe;font-size:16px;display:block;line-height:30px;}
 .content-box .down-link:hover{color:#333;}
@@ -52,10 +48,6 @@
 .content-box .select .link-drop-down{display:block;}
 .nav-down .link-list .link{padding-right:20px;}
 .content-box .select .down-arrow{display:block;border-top:0px;border-bottom:10px solid #f7372c;}
-
-.content-box .module-cont{padding-top:30px}
-.content-box .cont-list{display:none;}
-.content-box .cont-list.active{display:block}
 
 .set-avatar{}
 .set-avatar .avatar-name{color:#727272;font-size:16px;text-align:center;padding-top:10px}
@@ -124,7 +116,7 @@ cursor: pointer;}
 /*充值*/
 
 .recharge-box .module{padding:0}
-.recharge-box .module-nav{padding-top:40px;margin-left:40px;margin-right:40px;}
+.recharge-box .module-nav{padding-top:40px;margin-left:20px;margin-right:20px;}
 .recharge-box .recharge-cont{padding:0 40px 50px}
 .recharge-box .module-tit{color:#f7372c;font-size:18px;}
 .recharge-box .prompt-box{border-top:1px solid #dcdcdc;padding:20px 40px 60px;}
@@ -200,7 +192,7 @@ cursor: pointer;}
 /*上传资源 end*/
 
 /*资源管理*/
-.personal-r .module{padding: 40px 20px;}
+// .personal-r .module{padding: 40px 20px;}
 .filter-box{font-size:14px;margin-top:0;margin-bottom:14px;}
 .filter-box .filter-left{line-height: 30px;}
 .filter-box .filter-name{color:#727272;}
