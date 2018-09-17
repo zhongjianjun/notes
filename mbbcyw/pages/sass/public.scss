@@ -1,0 +1,8 @@
+﻿@import 'module/reset';//清除默认
+@import 'module/font';//字体图标
+@import 'module/header';//头部
+@import 'module/footer';//尾部
+
+body{min-width:320px;}
+.bbcy-border{background-color:#e1e1e1;height:.6rem;width:100%;}
+.c-red{color:#f7372c}

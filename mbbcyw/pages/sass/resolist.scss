@@ -1,0 +1,26 @@
+@import 'module/page';//分页
+$bbcywColor: #f7372c;
+
+/*资源列表分类*/
+.subnav{}
+.title-box{width:100%;height:4rem;line-height:4rem;}
+.title-box .tit-name{color: $bbcywColor;font-size: 1.8rem;height: 4rem;line-height: 4rem;padding-left: 3%;}
+.title-box .small-text{font-size: 1.2rem;font-weight: normal;margin-left: 5px;}
+.main-link-box{padding:1rem 0;width:96%;margin:0 auto;}
+.main-link-box .link-list{width: 25%;float: left;}
+.main-link-box .links{color: #7c7c7c;font-size: 1.4rem;display: block;text-align: center;height: 3rem;line-height: 3rem;overflow: hidden;}
+.main-link-box .c-red .links{color: #fff;background-color: $bbcywColor;border-radius:4px;}
+
+/*资源列表内容*/
+.reso-list-box {padding: 1rem 0;}
+.show-pic-box{padding:0 1rem;}
+.show-pic{margin-left:-2%}
+.show-pic .list{width:48%;margin-left:2%;float:left;margin-bottom:1rem;}
+.show-pic .img-box{height:10rem;}
+.show-pic .img-box .link{height:10rem;line-height:10rem;width:16rem;display:table-cell;text-align:center;vertical-align:middle;background-color:#e9e9e9;}
+.show-pic .img{vertical-align:middle;margin:auto 0;overflow:hidden;max-height:10rem;max-width:100%;}
+.show-pic .pic-info{width:100%;overflow:hidden;padding-top:.6rem;}
+.show-pic .pic-name{font-size:1.4rem;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.show-pic .pic-name .link{}
+
+/*end*/
