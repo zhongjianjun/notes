@@ -33,12 +33,12 @@
 .header-02 .head-menu .iconfont{font-size:1.6rem;padding-right:.6rem}
 
 .header-02 .menu-link-box{position:absolute;right:.4rem;top:4rem;display:none;z-index:2;}
-.header-02 .menu-link-box .menu-link{border-top:1px solid #fb9b96;display:block;background-color:$bbcywColor;color:#fff;padding:0 2rem;font-size:1.4rem;line-height:2.6rem}
+.header-02 .menu-link-box .menu-link{display:block;background-color:#303030;color:#fff;padding:0 2rem;font-size:1.4rem;line-height:3rem;min-width: 5.4rem;}
+.header-02 .menu-link-box .menu-arrow{border-bottom:.6rem solid #303030;border-left:.6rem solid transparent;border-right:.6rem solid transparent;position:absolute;top:-.6rem;left:60%;}
+.header-02 .menu-link-box .menu-link:last-child{border-top:1px solid #8e8e8e;border-radius: 0 0 .3rem .3rem}
 .header-02 .menu-link-box .menu-link:first-child,
-.header-02 .menu-link-box .first-menu
-{border-top:0 none;}
-.header-02 .menu-link-box .menu-arrow{border-bottom:.6rem solid $bbcywColor;border-left:.6rem solid transparent;border-right:.6rem solid transparent;position:absolute;top:-.6rem;left:60%;}
-
+.header-02 .menu-link-box .first-menu{border-radius:.3rem .3rem 0 0 }
+.header-02 .menu-link-box .menu-link.select{background-color: #3b3b3b}
 /*分享*/
 .share-s1{position:fixed;width:100%;left:0;bottom:0;background:#f3f3f3;z-index:9999;display: none;}
 .share-s1 .shareCon{}
@@ -75,3 +75,42 @@
 .float-mask {position: fixed;width: 100%;height: 100%;top: 0;left: 0;background: rgba(0, 0, 0, 0.5);z-index: 9998;opacity: 0;-webkit-transition-duration: .3s;transition-duration: .3s;visibility: hidden;display: none;}
 .mask-visible {visibility: visible;opacity: 1;}
 /*header-02 end*/
+
+.header-03{background-color: #f7372c;}
+.header-03 .iconfont,.header-03 .head-name{color: #fff;}
+.header-03 .header-search-icon{position: absolute;right: 4rem;top: 0;text-align: right;line-height: 4.3rem;color: #727272;font-size: 1.4rem;}
+.header-03 .header-search-icon .iconfont{font-size: 1.8rem;padding: 0 .8rem;}
+.header-03 .head-name{padding:0 7rem;}
+.header-03 .home-icon{height: 26px;vertical-align: middle;margin-left: .4rem;}
+
+.nav_wapper{
+    display: none;
+    background-color: #f7f7f7;
+    z-index: 3;
+    position: relative;
+}
+.nav_wapper .login-status{
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    height: 5rem;
+    line-height: 5rem;
+    position: relative;
+    font-size: 0;
+}
+.login-status .btn-login,.login-status .btn-register{color: #4a4a4a;font-size: 1.4rem;}
+.login-status .border-about{margin: 0 1rem;font-size: 1.6rem;color: #4a4a4a;}
+.login-status .status-left,.login-status .status-right{height: 100%;display: inline-block;width: 50%;box-sizing: border-box}
+.login-status .status-left{padding-left: 1.8rem;}
+.login-status .status-left img{width: 3.3rem;vertical-align: middle;margin-bottom: 1.4rem;}
+.login-status .status-left p{display: inline-block;margin-left: 1rem;font-size: 1.5rem;}
+.login-status .status-right{text-align: right;padding-right: 1.6rem;}
+.login-status .select{color: #f7372c;}
+
+.nav_wapper .nav-box{display: block;background-color: #f7f7f7}
+.nav_wapper .nav-box .nav-list{display: inline-block;width: 100%;float:left;text-align:left;padding-left: 30px;height: 40px;line-height: 40px;}
+// .nav_wapper .nav-box li:hover{background: #fff;border-left: 0.4rem solid red;}
+.nav_wapper .nav-box .iconfont{color:#b1b1b1;font-size:3.2rem;line-height:3.2rem;}
+.nav_wapper .nav-box .nav-name{color:#4a4a4a;font-size:1.4rem;}
+.header-03 .header{padding-top: 0;height: 4.3rem;}
+.header-03 .nav-box .nav-list.select{background: #fff;border-left: 4px solid red;padding-left: 26px;}
+.header-03 .nav-box .nav-list{padding-top: 0;}

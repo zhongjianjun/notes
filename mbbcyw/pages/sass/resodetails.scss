@@ -1,7 +1,6 @@
 $bbcywColor: #f7372c;
 
 .header-box{border-bottom:.6rem solid #e1e1e1;}
-.footer{padding-bottom:3.8rem}
 /*详情内容*/
 .layout.swiper-box{border-top:0;}
 .page-view{padding-bottom:1rem;}
@@ -33,7 +32,10 @@ $bbcywColor: #f7372c;
 /*详情内容标签*/
 .cat-box{padding: 1rem 1rem 0;}
 .cat-box .cat-link{color: #a9a9a9;font-size: 1.2rem;display: block;background-color: #e5e5e5;height: 2rem;line-height: 2rem;padding: 0 5px;float: left;margin-right: 1rem;margin-bottom: .8rem;}
-
+.cat-box .cat-title{color: red;padding: .6rem 0;}
+.cat-box .cat-title2{font-size: 1.4rem;color: #727272;padding: .2rem 0 1.2rem 0;}
+.cat-article{width: 100%;color: #727272;}
+.cat-articleP{line-height: 1.9rem;text-indent: 2em;}
 /*管理文档*/
 .layout{width:100%;padding-bottom:1rem;border-top:.6rem solid #e1e1e1;}
 .title-box{width:100%;height:4rem;line-height:4rem;}
@@ -64,9 +66,12 @@ $bbcywColor: #f7372c;
 
 .about-news-box{padding:0 1rem;}
 .about-news-box .news-list{height: 2.4rem;line-height: 2.4rem;}
-.about-news-box .news-point{background-color: #a0a0a0;margin-right: .3rem;display: inline-block;border-radius: 50%;width: 5px;height: 5px;}
-.about-news-box .news-link{}
-.about-news-box .c-red{}
+.about-news-box .site-icon{font-size: 1.4rem;margin-right: .3rem;vertical-align: middle;}
+.about-news-box .site-icon.doc{color: #2951b3;}
+.about-news-box .site-icon.xls{color: #327051;}
+.about-news-box .site-icon.pdf{color: #bc4040;}
+.about-news-box .site-icon.ppt{color: #973a33;}
+.about-news-box .site-icon.rtf{color: #6289bc;}
 /**/
 
 /*相册*/

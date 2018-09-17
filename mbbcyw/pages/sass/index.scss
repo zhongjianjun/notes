@@ -6,11 +6,6 @@ $bbcywColor: #f7372c;
 .index_swiper .slide-img{display:block;width:100%}
 .index_swiper .swiper-pagination{bottom:.3rem;}
 .index_swiper .swiper-pagination-bullet-active{background-color:$bbcywColor}
-/*主导航*/
-.main-link-box{border-top:1px solid #f0f0f0;border-left:1px solid #f0f0f0;}
-.main-link-box .link-list{width:25%;float: left;}
-.main-link-box .links{color:#7c7c7c;font-size:1.4rem;border-right:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0;display: block;text-align:center;height:3.4rem;line-height:3.4rem;overflow:hidden;}
-.main-link-box .c-red .links{color:$bbcywColor;}
 
 /*头条*/
 .dynamic-main{height:3.6rem;line-height:3.6rem;overflow:hidden;}
@@ -28,7 +23,7 @@ $bbcywColor: #f7372c;
 .title-box .link{color:#727272;}
 .title-box .link-box .link{width:auto;font-size:1.3rem;margin-left:1rem;margin-right:1rem;}
 .title-box .link-box .c-red{color:$bbcywColor}
-
+.title-box .more{float: right;color: #727272;padding-right: 1rem;padding-top: .4rem;font-size: 1.4rem;}
 /*内容展示*/
 .show-pic-box{padding:0 1rem;}
 .show-pic{margin-left:-2%}
@@ -73,3 +68,8 @@ $bbcywColor: #f7372c;
 .active-main .c-blue{color:#3390d0;}
 
 /*end*/
+/*search-bar*/
+.search-bar{padding: 20px 4%;}
+.search-bar .search-input{color: #aaa;letter-spacing: 1px;font-size: 17px;border: 1px solid red;outline: none;height: 45px;width: 66%;float: left;text-indent: 1rem;}
+.search-bar .search-btn{display: inline-block;color: #fff;font-size: 16px;background: red;height:47px;line-height: 46px;vertical-align: sub;position: relative;float: left;width: 33%;text-align: center}
+/*search-bar end*/

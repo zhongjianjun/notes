@@ -1,540 +1,596 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-    <meta content="yes" name="apple-mobile-web-app-capable"/>
-    <meta content="yes" name="apple-touch-fullscreen"/>
-    <meta content="telephone=no" name="format-detection"/>
-    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="yes" name="apple-touch-fullscreen" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
 	<title>帮帮创意网</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<link href="css/public.css" rel="stylesheet" type="text/css" />
 	<script src="js/public.js" type="text/javascript"></script>
 </head>
-<body>
 
-<div class="wrapper">
-<!--header-->
-	<div class="header-box">
-		<div class="header-main" id="header_main">
-			<div class="header clearfix">
-				<a class="heder-logo" href="/"><img class="logo" src="images/logo.png" alt="帮帮创意网" /></a>
-				<div class="head-search">
-					<input class="search-text" type="text" placeholder="" />
-					<a class="search-btn" href="javascript:;"><i class="iconfont">&#xe603;</i></a>
+<body>
+	<div class="wrapper">
+
+		<div class="header-box header-02 header-03">
+			<div class="header-main" id="header_main">
+				<div class="header clearfix">
+					<a class="head-back" href="/"><img class="home-icon" src="images/icon-home.png" alt="帮帮创意网" /></a>
+					<h2 class="head-name">帮帮创意</h2>
+					<a class="header-search-icon" href="javascript:;"><i class="iconfont">&#xe603;</i></a>
+					<a class="head-menu menu_tag" id="menu_tag" href="javascript:;"><i class="iconfont">&#xe761;</i></a>
 				</div>
-				<a class="head-menu menu_tag" id="menu_tag" href="javascript:;"><i class="iconfont">&#xe761;</i></a>
+				<div class="header-mark" id="header_mark"></div>
+				<div class="nav_wapper" id="nav_menu">
+					<!--登录前-->
+					<!-- <div class="login-status header-login" id="header-login">
+								<a class="btn-login select" href="/">登录</a>
+								<span class="border-about">|</span>
+								<a class="btn-register" href="/">注册</a>
+							</div> -->
+					<!--登录后-->
+					<div class="login-status header-user clearfix" id="header-user">
+						<div class="status-left">
+							<img src="images/avatar_02.png" alt="用户头像">
+							<p>海阔天空</p>
+						</div>
+						<div class="status-right">
+							<a class="btn-login select" href="/">用户中心</a>
+							<span class="border-about">|</span>
+							<a class="btn-register" href="/">退出</a>
+						</div>
+					</div>
+					<!--end-->
+					<ul class="nav-box clearfix nav_menu">
+						<li class="nav-list select">
+							<a class="nav-link" href="">
+								<p class="nav-name">首页</p>
+							</a>
+						</li>
+						<li class="nav-list">
+							<a class="nav-link" href="">
+								<p class="nav-name">分类</p>
+							</a>
+						</li>
+						<li class="nav-list">
+							<a class="nav-link" href="">
+								<p class="nav-name">专题</p>
+							</a>
+						</li>
+						<li class="nav-list">
+							<a class="nav-link" href="">
+								<p class="nav-name">资讯</p>
+							</a>
+						</li>
+						<li class="nav-list">
+							<a class="nav-link" href="">
+								<p class="nav-name">教程</p>
+							</a>
+						</li>
+						<li class="nav-list">
+							<a class="nav-link" href="">
+								<p class="nav-name">排行榜</p>
+							</a>
+						</li>
+						<li class="nav-list">
+							<a class="nav-link" href="">
+								<p class="nav-name">任务求助</p>
+							</a>
+						</li>
+						<li class="nav-list">
+							<a class="nav-link" href="">
+								<p class="nav-name">活动</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- <ul class="nav-box clearfix nav_menu" id="nav_menu">
+					<li class="nav-list">
+						<a class="nav-link" href="">
+							<i class="iconfont">&#xe606;</i>
+							<p class="nav-name">专题</p>
+						</a>
+					</li>
+					<li class="nav-list">
+						<a class="nav-link" href="">
+							<i class="iconfont">&#xe605;</i>
+							<p class="nav-name">话题</p>
+						</a>
+					</li>
+					<li class="nav-list">
+						<a class="nav-link" href="">
+							<i class="iconfont">&#xe61f;</i>
+							<p class="nav-name">教程</p>
+						</a>
+					</li>
+					<li class="nav-list">
+						<a class="nav-link" href="">
+							<i class="iconfont">&#xe68f;</i>
+							<p class="nav-name">排行榜</p>
+						</a>
+					</li>
+					<li class="nav-list">
+						<a class="nav-link" href="">
+							<i class="iconfont">&#xe602;</i>
+							<p class="nav-name">任务求助</p>
+						</a>
+					</li>
+					<li class="nav-list">
+						<a class="nav-link" href="">
+							<i class="iconfont">&#xe62e;</i>
+							<p class="nav-name">活动</p>
+						</a>
+					</li>
+					<li class="nav-list">
+						<a class="nav-link" href="">
+							<i class="iconfont">&#xe601;</i>
+							<p class="nav-name">我的</p>
+						</a>
+					</li>
+				</ul> -->
 			</div>
-			<div class="header-mark" id="header_mark"></div>
-			<ul class="nav-box clearfix nav_menu" id="nav_menu">
-				<li class="nav-list">
-					<a class="nav-link" href="">
-						<i class="iconfont">&#xe606;</i>
-						<p class="nav-name">专题</p>
-					</a>
+		</div>
+
+		<!--header
+		<div class="header-box">
+			<div class="header-main" id="header_main">
+				<div class="header clearfix">
+					<a class="heder-logo" href="/"><img class="logo" src="images/logo.png" alt="帮帮创意网" /></a>
+					<div class="head-search">
+						<input class="search-text" type="text" placeholder="" />
+						<a class="search-btn" href="javascript:;"><i class="iconfont">&#xe603;</i></a>
+					</div>
+					<a class="head-menu menu_tag" id="menu_tag" href="javascript:;"><i class="iconfont">&#xe761;</i></a>
+				</div>
+				<div class="header-mark" id="header_mark"></div>
+				<ul class="nav-box clearfix nav_menu" id="nav_menu">
+					<li class="nav-list">
+						<a class="nav-link" href="">
+							<i class="iconfont">&#xe606;</i>
+							<p class="nav-name">专题</p>
+						</a>
+					</li>
+					<li class="nav-list">
+						<a class="nav-link" href="">
+							<i class="iconfont">&#xe605;</i>
+							<p class="nav-name">话题</p>
+						</a>
+					</li>
+					<li class="nav-list">
+						<a class="nav-link" href="">
+							<i class="iconfont">&#xe61f;</i>
+							<p class="nav-name">教程</p>
+						</a>
+					</li>
+					<li class="nav-list">
+						<a class="nav-link" href="">
+							<i class="iconfont">&#xe68f;</i>
+							<p class="nav-name">排行榜</p>
+						</a>
+					</li>
+					<li class="nav-list">
+						<a class="nav-link" href="">
+							<i class="iconfont">&#xe602;</i>
+							<p class="nav-name">任务求助</p>
+						</a>
+					</li>
+					<li class="nav-list">
+						<a class="nav-link" href="">
+							<i class="iconfont">&#xe62e;</i>
+							<p class="nav-name">活动</p>
+						</a>
+					</li>
+					<li class="nav-list">
+						<a class="nav-link" href="">
+							<i class="iconfont">&#xe601;</i>
+							<p class="nav-name">我的</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>-->
+		<!--/header-->
+
+		<!--container-->
+		<link href="css/index.css" rel="stylesheet" type="text/css" />
+		<!--首焦-->
+		<div class="swiper-container index_swiper" id="index_swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><a href=""><img class="slide-img" src="images/slide_01.jpg" /></a></div>
+				<div class="swiper-slide"><a href=""><img class="slide-img" src="images/slide_01.jpg" /></a></div>
+				<div class="swiper-slide"><a href=""><img class="slide-img" src="images/slide_01.jpg" /></a></div>
+			</div>
+			<div class="swiper-pagination" id="index_pagination"></div>
+		</div>
+		<!--/首焦-->
+		<div class="bbcy-border"></div>
+		<!-- search-bar -->
+		<div class="search-bar clearfix">
+			<input class="search-input" type="text" placeholder="搜索标题、关键词" />
+			<a class="search-btn" href="javascript:;">搜索</a>
+		</div>
+		<div class="bbcy-border"></div>
+		<!-- 头条 -->
+		<div class="swiper-container dynamic-main" id="news_swiper">
+			<ul class="dynamic-box swiper-wrapper" id="marqueebox0">
+				<li class="dynamic-list swiper-slide"><a class="link" href="">hujincheng</a>购买了<a class="link" href="">banner图片2</a>付出<span
+					 class="t-color">￥5.00</span>帮币</li>
+				<li class="dynamic-list swiper-slide"><a class="link" href="">乌云娜</a>购买了<a class="link" href="">jc 934...</a>付出<span
+					 class="t-color">￥30.00</span>帮币</li>
+			</ul>
+		</div>
+		<!-- /头条 -->
+		<div class="bbcy-border"></div>
+		<!--最新资源-->
+		<div class="title-box clearfix">
+			<h3 class="tit-name">最新资源</h3>
+			<a class="more" href="">MORE></a>
+		</div>
+		<div class="show-pic-box new-zy">
+			<ul class="show-pic clearfix">
+				<li class="list">
+					<div class="img-box">
+						<a class="link" href="">
+							<img class="img" src="./images/slide_01.jpg" alt="中国银行营业网点服务规范" />
+						</a>
+					</div>
+					<div class="pic-info">
+						<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
+					</div>
 				</li>
-				<li class="nav-list">
-					<a class="nav-link" href="">
-						<i class="iconfont">&#xe605;</i>
-						<p class="nav-name">话题</p>
-					</a>
+				<li class="list">
+					<div class="img-box">
+						<a class="link" href="">
+							<img class="img" src="./images/slide_01.jpg" alt="中国银行营业网点服务规范" />
+						</a>
+					</div>
+					<div class="pic-info">
+						<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
+					</div>
 				</li>
-				<li class="nav-list">
-					<a class="nav-link" href="">
-						<i class="iconfont">&#xe61f;</i>
-						<p class="nav-name">教程</p>
-					</a>
+				<li class="list">
+					<div class="img-box">
+						<a class="link" href="">
+							<img class="img" src="./images/slide_01.jpg" alt="中国银行营业网点服务规范" />
+						</a>
+					</div>
+					<div class="pic-info">
+						<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
+					</div>
 				</li>
-				<li class="nav-list">
-					<a class="nav-link" href="">
-						<i class="iconfont">&#xe68f;</i>
-						<p class="nav-name">排行榜</p>
-					</a>
-				</li>
-				<li class="nav-list">
-					<a class="nav-link" href="">
-						<i class="iconfont">&#xe602;</i>
-						<p class="nav-name">任务求助</p>
-					</a>
-				</li>
-				<li class="nav-list">
-					<a class="nav-link" href="">
-						<i class="iconfont">&#xe62e;</i>
-						<p class="nav-name">活动</p>
-					</a>
-				</li>
-				<li class="nav-list">
-					<a class="nav-link" href="">
-						<i class="iconfont">&#xe601;</i>
-						<p class="nav-name">我的</p>
-					</a>
+				<li class="list">
+					<div class="img-box">
+						<a class="link" href="">
+							<img class="img" src="./images/slide_01.jpg" alt="中国银行营业网点服务规范" />
+						</a>
+					</div>
+					<div class="pic-info">
+						<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
+					</div>
 				</li>
 			</ul>
 		</div>
-	</div>
-<!--/header-->
+		<!--/最新资源-->
+		<!--市场营销-->
+		<div class="title-box clearfix">
+			<h3 class="tit-name"><a class="link" href="">市场营销</a></h3>
+			<a class="more" href="">MORE></a>
+		</div>
+		<div class="show-pic-box">
+			<ul class="show-pic clearfix">
+				<li class="list">
+					<div class="img-box">
+						<a class="link" href="">
+							<img class="img" src="./images/slide_01.jpg" alt="中国银行营业网点服务规范" />
+						</a>
+					</div>
+					<div class="pic-info">
+						<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
+					</div>
+				</li>
+				<li class="list">
+					<div class="img-box">
+						<a class="link" href="">
+							<img class="img" src="./images/slide_01.jpg" alt="中国银行营业网点服务规范" />
+						</a>
+					</div>
+					<div class="pic-info">
+						<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
+					</div>
+				</li>
+				<li class="list">
+					<div class="img-box">
+						<a class="link" href="">
+							<img class="img" src="./images/slide_01.jpg" alt="中国银行营业网点服务规范" />
+						</a>
+					</div>
+					<div class="pic-info">
+						<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
+					</div>
+				</li>
+				<li class="list">
+					<div class="img-box">
+						<a class="link" href="">
+							<img class="img" src="./images/slide_01.jpg" alt="中国银行营业网点服务规范" />
+						</a>
+					</div>
+					<div class="pic-info">
+						<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--/市场营销-->
+		<!--设计素材-->
+		<div class="title-box clearfix">
+			<h3 class="tit-name"><a class="link" href="">设计素材</a></h3>
+			<a class="more" href="">MORE></a>
+		</div>
+		<div class="show-pic-box">
+			<ul class="show-pic clearfix">
+				<li class="list">
+					<div class="img-box">
+						<a class="link" href="">
+							<img class="img" src="./images/slide_01.jpg" alt="中国银行营业网点服务规范" />
+						</a>
+					</div>
+					<div class="pic-info">
+						<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
+					</div>
+				</li>
+				<li class="list">
+					<div class="img-box">
+						<a class="link" href="">
+							<img class="img" src="./images/slide_01.jpg" alt="中国银行营业网点服务规范" />
+						</a>
+					</div>
+					<div class="pic-info">
+						<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
+					</div>
+				</li>
+				<li class="list">
+					<div class="img-box">
+						<a class="link" href="">
+							<img class="img" src="./images/slide_01.jpg" alt="中国银行营业网点服务规范" />
+						</a>
+					</div>
+					<div class="pic-info">
+						<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
+					</div>
+				</li>
+				<li class="list">
+					<div class="img-box">
+						<a class="link" href="">
+							<img class="img" src="./images/slide_01.jpg" alt="中国银行营业网点服务规范" />
+						</a>
+					</div>
+					<div class="pic-info">
+						<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--/设计素材-->
+		<!--高清图片-->
+		<div class="title-box clearfix">
+			<h3 class="tit-name"><a class="link" href="">高清图片</a></h3>
+			<a class="more" href="">MORE></a>
+		</div>
+		<div class="show-pic-box">
+			<ul class="show-pic clearfix">
+				<li class="list">
+					<div class="img-box">
+						<a class="link" href="">
+							<img class="img" src="./images/slide_01.jpg" alt="中国银行营业网点服务规范" />
+						</a>
+					</div>
+					<div class="pic-info">
+						<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
+					</div>
+				</li>
+				<li class="list">
+					<div class="img-box">
+						<a class="link" href="">
+							<img class="img" src="./images/slide_01.jpg" alt="中国银行营业网点服务规范" />
+						</a>
+					</div>
+					<div class="pic-info">
+						<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
+					</div>
+				</li>
+				<li class="list">
+					<div class="img-box">
+						<a class="link" href="">
+							<img class="img" src="./images/slide_01.jpg" alt="中国银行营业网点服务规范" />
+						</a>
+					</div>
+					<div class="pic-info">
+						<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
+					</div>
+				</li>
+				<li class="list">
+					<div class="img-box">
+						<a class="link" href="">
+							<img class="img" src="./images/slide_01.jpg" alt="中国银行营业网点服务规范" />
+						</a>
+					</div>
+					<div class="pic-info">
+						<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--/高清图片-->
+		<!--推荐话题-->
+		<div class="title-box clearfix">
+			<h3 class="tit-name"><a class="link" href="">推荐话题</a></h3>
+			<a class="more" href="">MORE></a>
+		</div>
+		<div class="show-pic-box topic-box">
+			<ul class="show-pic clearfix">
+				<li class="list">
+					<div class="img-box">
+						<a class="link" href="">
+							<img class="img" src="./images/slide_01.jpg" alt="中国银行营业网点服务规范" />
+						</a>
+					</div>
+					<div class="pic-info">
+						<h4 class="pic-name"><a class="link" href="">Airbnb收购小猪短租？携程留给他们的时间不多了</a></h4>
+					</div>
+				</li>
+				<li class="list">
+					<div class="img-box">
+						<a class="link" href="">
+							<img class="img" src="./images/slide_01.jpg" alt="中国银行营业网点服务规范" />
+						</a>
+					</div>
+					<div class="pic-info">
+						<h4 class="pic-name"><a class="link" href="">小米做互联网音箱是否真像王川</a></h4>
+					</div>
+				</li>
+				<li class="list">
+					<div class="img-box">
+						<a class="link" href="">
+							<img class="img" src="./images/slide_01.jpg" alt="中国银行营业网点服务规范" />
+						</a>
+					</div>
+					<div class="pic-info">
+						<h4 class="pic-name"><a class="link" href="">第三方支付如何入股网联？谁贡献多谁就股份多但最高不…</a></h4>
+					</div>
+				</li>
+				<li class="list">
+					<div class="img-box">
+						<a class="link" href="">
+							<img class="img" src="./images/slide_01.jpg" alt="中国银行营业网点服务规范" />
+						</a>
+					</div>
+					<div class="pic-info">
+						<h4 class="pic-name"><a class="link" href="">我们盘点了短视频发展的三个阶段，捋清这把“冬天里的火”…</a></h4>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--/推荐话题-->
+		<!--教程-->
+		<div class="title-box clearfix">
+			<h3 class="tit-name"><a class="link" href="">教程</a></h3>
+			<a class="more" href="">MORE></a>
+		</div>
+		<ul class="tutorial-box">
+			<li class="tutorial-list">
+				<a class="tutorial-link" href="">
+					<h3 class="tutorial-name">干货！品牌视觉识别系统新手入门指南</h3>
+					<p class="tutorial-info">作者微博： @Jromore-阿漂 http://weibo.com/jromore 相关文章浅析平面</p>
+				</a>
+			</li>
+			<li class="tutorial-list">
+				<a class="tutorial-link" href="">
+					<h3 class="tutorial-name">酷！6个免费在线制作LOGO的网站</h3>
+					<p class="tutorial-info">一个好的logo可以即刻为您的品牌增加价值，但是往往我们创建一个logo的时候，</p>
+				</a>
+			</li>
+			<li class="tutorial-list">
+				<a class="tutorial-link" href="">
+					<h3 class="tutorial-name">给跪了！美丫姐带你看央视新LOGO背后的那些飞机稿！</h3>
+					<p class="tutorial-info">前几天，央视爸爸在多个社交平台上更换了自己从2000年开始使用的双线央视Logo往我们创建一个logo的时候，</p>
+				</a>
+			</li>
+			<li class="tutorial-list">
+				<a class="tutorial-link" href="">
+					<h3 class="tutorial-name">给跪了！美丫姐带你看央视新LOGO背后的那些飞机稿！</h3>
+					<p class="tutorial-info">前几天，央视爸爸在多个社交平台上更换了自己从2000年开始使用的双线央视Logo往我们创建一个logo的时候，</p>
+				</a>
+			</li>
+		</ul>
+		<!--/教程-->
+		<div class="bbcy-border"></div>
+		<!--活跃用户-->
+		<div class="title-box clearfix">
+			<h3 class="tit-name"><a class="link" href="">活跃用户</a></h3>
+		</div>
+		<div class="active-main swiper-container scroll_cont">
+			<ul class="active-user clearfix swiper-wrapper">
+				<li class="user-list swiper-slide">
+					<a class="user-img-box" href=""><img class="user-img" src="images/avatar_02.png" /></a>
+					<h3 class="user-name"><a class="link" href="">liwenfei1314</a></h3>
+					<p class="user-info">粉丝:<span class="c-blue">7</span>/素材:<span class="c-blue">3670</span></p>
+				</li>
+				<li class="user-list swiper-slide">
+					<a class="user-img-box" href=""><img class="user-img" src="images/avatar.png" /></a>
+					<h3 class="user-name"><a class="link" href="">文档文档好文档</a></h3>
+					<p class="user-info">粉丝:<span class="c-blue">7</span>/素材:<span class="c-blue">3670</span></p>
+				</li>
+				<li class="user-list swiper-slide">
+					<a class="user-img-box" href=""><img class="user-img" src="images/avatar_02.png" /></a>
+					<h3 class="user-name"><a class="link" href="">zhangkuan1436</a></h3>
+					<p class="user-info">粉丝:<span class="c-blue">7</span>/素材:<span class="c-blue">3670</span></p>
+				</li>
+				<li class="user-list swiper-slide">
+					<a class="user-img-box" href=""><img class="user-img" src="images/avatar.png" /></a>
+					<h3 class="user-name"><a class="link" href="">928834181</a></h3>
+					<p class="user-info">粉丝:<span class="c-blue">7</span>/素材:<span class="c-blue">3670</span></p>
+				</li>
+				<li class="user-list swiper-slide">
+					<a class="user-img-box" href=""><img class="user-img" src="images/avatar_02.png" /></a>
+					<h3 class="user-name"><a class="link" href="">1449388646</a></h3>
+					<p class="user-info">粉丝:<span class="c-blue">7</span>/素材:<span class="c-blue">3670</span></p>
+				</li>
+				<li class="user-list swiper-slide">
+					<a class="user-img-box" href=""><img class="user-img" src="images/avatar.png" /></a>
+					<h3 class="user-name"><a class="link" href="">秘书文档</a></h3>
+					<p class="user-info">粉丝:<span class="c-blue">7</span>/素材:<span class="c-blue">3670</span></p>
+				</li>
+			</ul>
+		</div>
+		<!--/活跃用户-->
 
-<!--container-->
-	<link href="css/index.css" rel="stylesheet" type="text/css" />
-	<!--首焦-->
-    <div class="swiper-container index_swiper" id="index_swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><a href=""><img class="slide-img" src="images/slide_01.jpg"/></a></div>
-            <div class="swiper-slide"><a href=""><img class="slide-img" src="images/slide_01.jpg"/></a></div>
-            <div class="swiper-slide"><a href=""><img class="slide-img" src="images/slide_01.jpg"/></a></div>
-        </div>
-        <div class="swiper-pagination" id="index_pagination"></div>
-    </div>
-	<!--/首焦-->
-	<div class="bbcy-border"></div>
-	<!-- 主导航 -->
-	<ul class="main-link-box clearfix">
-		<li class="link-list"><a class="links" href="">市场营销</a></li>
-		<li class="link-list"><a class="links" href="">分析报告</a></li>
-		<li class="link-list"><a class="links" href="">管理咨询工具</a></li>
-		<li class="link-list"><a class="links" href="">设计素材</a></li>
-		<li class="link-list"><a class="links" href="">高清图片</a></li>
-		<li class="link-list c-red"><a class="links" href="">行业资料</a></li>
-		<li class="link-list"><a class="links" href="">管理文档</a></li>
-		<li class="link-list"><a class="links" href="">办公文档</a></li>
-		<li class="link-list"><a class="links" href="">PPT模板</a></li>
-		<li class="link-list"><a class="links" href="">考试资料</a></li>
-		<li class="link-list"><a class="links" href="">教学课件</a></li>
-		<li class="link-list"><a class="links" href="">经济金融</a></li>
-		<li class="link-list"><a class="links" href="">毕业论文</a></li>
-		<li class="link-list"><a class="links" href="">医学医疗</a></li>
-		<li class="link-list"><a class="links" href="">建筑施工</a></li>
-		<li class="link-list"><a class="links" href="">法律法学</a></li>
-		<li class="link-list"><a class="links" href="">计算机</a></li>
-		<li class="link-list"><a class="links" href="">资源专题</a></li>
-		<li class="link-list"><a class="links" href="">其他文档</a></li>
-	</ul>
-	<!-- /主导航 -->
-	<div class="bbcy-border"></div>
-	<!-- 头条 -->
-	<div class="swiper-container dynamic-main" id="news_swiper">
-		<ul class="dynamic-box swiper-wrapper" id="marqueebox0">
-			<li class="dynamic-list swiper-slide"><a class="link" href="">hujincheng</a>购买了<a class="link" href="">banner图片2</a>付出<span class="t-color">￥5.00</span>帮币</li>
-			<li class="dynamic-list swiper-slide"><a class="link" href="">乌云娜</a>购买了<a class="link" href="">jc 934...</a>付出<span class="t-color">￥30.00</span>帮币</li>
-		</ul>
-	</div>
-	<!-- /头条 -->
-	<div class="bbcy-border"></div>
-	<!--最新资源-->
-	<div class="title-box clearfix">
-		<h3 class="tit-name">最新资源</h3>
-	</div>
-	<div class="show-pic-box new-zy">
-		<ul class="show-pic clearfix">
-			<li class="list">
-				<div class="img-box">
-					<a class="link" href="">
-						<img class="img" src="http://www.bbcyw.com/fileroot2/2017-3/24/bcbb0650-3f67-4895-9778-f27fb89c11d2/pic1.jpg" alt="中国银行营业网点服务规范" />
-					</a>
-				</div>
-				<div class="pic-info">
-					<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
-				</div>
-			</li>
-			<li class="list">
-				<div class="img-box">
-					<a class="link" href="">
-						<img class="img" src="http://www.bbcyw.com/fileroot2/2017-3/24/bcbb0650-3f67-4895-9778-f27fb89c11d2/pic1.jpg" alt="中国银行营业网点服务规范" />
-					</a>
-				</div>
-				<div class="pic-info">
-					<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
-				</div>
-			</li>
-			<li class="list">
-				<div class="img-box">
-					<a class="link" href="">
-						<img class="img" src="http://www.bbcyw.com/fileroot2/2017-3/24/bcbb0650-3f67-4895-9778-f27fb89c11d2/pic1.jpg" alt="中国银行营业网点服务规范" />
-					</a>
-				</div>
-				<div class="pic-info">
-					<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
-				</div>
-			</li>
-			<li class="list">
-				<div class="img-box">
-					<a class="link" href="">
-						<img class="img" src="http://www.bbcyw.com/fileroot2/2017-3/24/bcbb0650-3f67-4895-9778-f27fb89c11d2/pic1.jpg" alt="中国银行营业网点服务规范" />
-					</a>
-				</div>
-				<div class="pic-info">
-					<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
-				</div>
-			</li>
-		</ul>
-	</div>
-	<!--/最新资源-->
-	<!--市场营销-->
-	<div class="title-box clearfix">
-		<h3 class="tit-name"><a class="link" href="">市场营销</a></h3>
-		<div class="title-link swiper-container scroll_cont">
-			<div class="link-box swiper-wrapper clearfix">
-				<a class="link swiper-slide" href="">营销策划</a>
-				<a class="link swiper-slide c-red" href="">产品规划</a>
-				<a class="link swiper-slide" href="">渠道管理</a>
-				<a class="link swiper-slide" href="">品牌策划</a>
-				<a class="link swiper-slide" href="">促销导购</a>
-				<a class="link swiper-slide" href="">终端店铺</a>
-				<a class="link swiper-slide" href="">连锁加盟</a>
-				<a class="link swiper-slide" href="">销售管理</a>
-				<a class="link swiper-slide" href="">推广策划</a>
-				<a class="link swiper-slide" href="">微博微信营销</a>
-				<a class="link swiper-slide" href="">公关活动</a>
-			</div>
-		</div>
-	</div>
-	<div class="show-pic-box">
-		<ul class="show-pic clearfix">
-			<li class="list">
-				<div class="img-box">
-					<a class="link" href="">
-						<img class="img" src="http://www.bbcyw.com/fileroot2/2017-3/12/b88650d2-843c-47ba-a303-a4a6e79937ac/pic1.jpg" alt="中国银行营业网点服务规范" />
-					</a>
-				</div>
-				<div class="pic-info">
-					<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
-				</div>
-			</li>
-			<li class="list">
-				<div class="img-box">
-					<a class="link" href="">
-						<img class="img" src="http://www.bbcyw.com/fileroot2/2017-3/24/bcbb0650-3f67-4895-9778-f27fb89c11d2/pic1.jpg" alt="中国银行营业网点服务规范" />
-					</a>
-				</div>
-				<div class="pic-info">
-					<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
-				</div>
-			</li>
-			<li class="list">
-				<div class="img-box">
-					<a class="link" href="">
-						<img class="img" src="http://www.bbcyw.com/fileroot2/2017-3/24/bcbb0650-3f67-4895-9778-f27fb89c11d2/pic1.jpg" alt="中国银行营业网点服务规范" />
-					</a>
-				</div>
-				<div class="pic-info">
-					<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
-				</div>
-			</li>
-			<li class="list">
-				<div class="img-box">
-					<a class="link" href="">
-						<img class="img" src="http://www.bbcyw.com/fileroot2/2017-3/24/bcbb0650-3f67-4895-9778-f27fb89c11d2/pic1.jpg" alt="中国银行营业网点服务规范" />
-					</a>
-				</div>
-				<div class="pic-info">
-					<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
-				</div>
-			</li>
-		</ul>
-	</div>
-	<!--/市场营销-->
-	<!--设计素材-->
-	<div class="title-box clearfix">
-		<h3 class="tit-name"><a class="link" href="">设计素材</a></h3>
-		<div class="title-link swiper-container scroll_cont">
-			<div class="link-box swiper-wrapper clearfix">
-				<a class="link swiper-slide" href="">标志</a>
-				<a class="link swiper-slide" href="">VI模板</a>
-				<a class="link swiper-slide" href="">海报</a>
-				<a class="link swiper-slide" href="">包装</a>
-				<a class="link swiper-slide" href="">画册</a>
-				<a class="link swiper-slide" href="">名片模板</a>
-				<a class="link swiper-slide" href="">PSD分层</a>
-				<a class="link swiper-slide" href="">终端物料</a>
-				<a class="link swiper-slide" href="">PPT模板</a>
-				<a class="link swiper-slide" href="">图标</a>
-				<a class="link swiper-slide" href="">网页素材</a>
-				<a class="link swiper-slide" href="">Flash素材</a>
-				<a class="link swiper-slide" href="">手机APP素材</a>
-				<a class="link swiper-slide" href="">淘宝素材</a>
-			</div>
-		</div>
-	</div>
-	<div class="show-pic-box">
-		<ul class="show-pic clearfix">
-			<li class="list">
-				<div class="img-box">
-					<a class="link" href="">
-						<img class="img" src="http://www.bbcyw.com/flexpaper/FileRoot/2015-1/3/b6ff695e-5b33-41d5-97bb-30128d601c07/0.jpg" alt="中国银行营业网点服务规范" />
-					</a>
-				</div>
-				<div class="pic-info">
-					<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
-				</div>
-			</li>
-			<li class="list">
-				<div class="img-box">
-					<a class="link" href="">
-						<img class="img" src="http://www.bbcyw.com/flexpaper/FileRoot/2014-12\4\51910692-4322-4b7c-b885-c8dd1fa9fc68/pic.jpg" alt="中国银行营业网点服务规范" />
-					</a>
-				</div>
-				<div class="pic-info">
-					<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
-				</div>
-			</li>
-			<li class="list">
-				<div class="img-box">
-					<a class="link" href="">
-						<img class="img" src="http://www.bbcyw.com/fileroot2/2017-3/24/bcbb0650-3f67-4895-9778-f27fb89c11d2/pic1.jpg" alt="中国银行营业网点服务规范" />
-					</a>
-				</div>
-				<div class="pic-info">
-					<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
-				</div>
-			</li>
-			<li class="list">
-				<div class="img-box">
-					<a class="link" href="">
-						<img class="img" src="http://www.bbcyw.com/fileroot2/2017-3/24/bcbb0650-3f67-4895-9778-f27fb89c11d2/pic1.jpg" alt="中国银行营业网点服务规范" />
-					</a>
-				</div>
-				<div class="pic-info">
-					<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
-				</div>
-			</li>
-		</ul>
-	</div>
-	<!--/设计素材-->
-	<!--高清图片-->
-	<div class="title-box clearfix">
-		<h3 class="tit-name"><a class="link" href="">高清图片</a></h3>
-		<div class="title-link swiper-container scroll_cont">
-			<div class="link-box swiper-wrapper clearfix">
-				<a class="link swiper-slide" href="">人物图片</a>
-				<a class="link swiper-slide" href="">风景图片</a>
-				<a class="link swiper-slide" href="">世界风光</a>
-				<a class="link swiper-slide" href="">动物图片</a>
-				<a class="link swiper-slide" href="">运动图片</a>
-				<a class="link swiper-slide" href="">饮食图片</a>
-				<a class="link swiper-slide" href="">底纹图案</a>
-				<a class="link swiper-slide" href="">医药医学</a>
-				<a class="link swiper-slide" href="">工业图片</a>
-				<a class="link swiper-slide" href="">科技图片</a>
-				<a class="link swiper-slide" href="">商业金融</a>
-				<a class="link swiper-slide" href="">中华图片</a>
-			</div>
-		</div>
-	</div>
-	<div class="show-pic-box">
-		<ul class="show-pic clearfix">
-			<li class="list">
-				<div class="img-box">
-					<a class="link" href="">
-						<img class="img" src="http://www.bbcyw.com/flexpaper/FileRoot/2014-3\29\d72b8d37-6e87-4334-be4b-d27a3c6aca33/0.jpg" alt="中国银行营业网点服务规范" />
-					</a>
-				</div>
-				<div class="pic-info">
-					<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
-				</div>
-			</li>
-			<li class="list">
-				<div class="img-box">
-					<a class="link" href="">
-						<img class="img" src="http://www.bbcyw.com/flexpaper/FileRoot/2014-12\4\51910692-4322-4b7c-b885-c8dd1fa9fc68/pic.jpg" alt="中国银行营业网点服务规范" />
-					</a>
-				</div>
-				<div class="pic-info">
-					<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
-				</div>
-			</li>
-			<li class="list">
-				<div class="img-box">
-					<a class="link" href="">
-						<img class="img" src="http://www.bbcyw.com/fileroot2/2017-3/24/bcbb0650-3f67-4895-9778-f27fb89c11d2/pic1.jpg" alt="中国银行营业网点服务规范" />
-					</a>
-				</div>
-				<div class="pic-info">
-					<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
-				</div>
-			</li>
-			<li class="list">
-				<div class="img-box">
-					<a class="link" href="">
-						<img class="img" src="http://www.bbcyw.com/flexpaper/FileRoot/2014-12\7\fff30c86-7ee6-42f4-a70d-60881f73f6ea/0.jpg" alt="中国银行营业网点服务规范" />
-					</a>
-				</div>
-				<div class="pic-info">
-					<h4 class="pic-name"><a class="link" href="">中国银行营业网点服务规范</a></h4>
-				</div>
-			</li>
-		</ul>
-	</div>
-	<div class="pic-more-box">
-		<a class="pic-more" href="">加载更多<i class="iconfont">&#xe604;</i></a>
-	</div>
-	<!--/高清图片-->
-	<!--推荐话题-->
-	<div class="title-box clearfix">
-		<h3 class="tit-name"><a class="link" href="">推荐话题</a></h3>
-	</div>
-	<div class="show-pic-box topic-box">
-		<ul class="show-pic clearfix">
-			<li class="list">
-				<div class="img-box">
-					<a class="link" href="">
-						<img class="img" src="http://www.bbcyw.com/FileUpload/News/26a1b75c-9db7-4202-999e-8a2671120e8e.jpg" alt="中国银行营业网点服务规范" />
-					</a>
-				</div>
-				<div class="pic-info">
-					<h4 class="pic-name"><a class="link" href="">Airbnb收购小猪短租？携程留给他们的时间不多了</a></h4>
-				</div>
-			</li>
-			<li class="list">
-				<div class="img-box">
-					<a class="link" href="">
-						<img class="img" src="http://www.bbcyw.com/flexpaper/FileRoot/2014-12\4\51910692-4322-4b7c-b885-c8dd1fa9fc68/pic.jpg" alt="中国银行营业网点服务规范" />
-					</a>
-				</div>
-				<div class="pic-info">
-					<h4 class="pic-name"><a class="link" href="">小米做互联网音箱是否真像王川</a></h4>
-				</div>
-			</li>
-			<li class="list">
-				<div class="img-box">
-					<a class="link" href="">
-						<img class="img" src="http://www.bbcyw.com/fileroot2/2017-3/24/bcbb0650-3f67-4895-9778-f27fb89c11d2/pic1.jpg" alt="中国银行营业网点服务规范" />
-					</a>
-				</div>
-				<div class="pic-info">
-					<h4 class="pic-name"><a class="link" href="">第三方支付如何入股网联？谁贡献多谁就股份多但最高不…</a></h4>
-				</div>
-			</li>
-			<li class="list">
-				<div class="img-box">
-					<a class="link" href="">
-						<img class="img" src="http://www.bbcyw.com/flexpaper/FileRoot/2014-12\7\fff30c86-7ee6-42f4-a70d-60881f73f6ea/0.jpg" alt="中国银行营业网点服务规范" />
-					</a>
-				</div>
-				<div class="pic-info">
-					<h4 class="pic-name"><a class="link" href="">我们盘点了短视频发展的三个阶段，捋清这把“冬天里的火”…</a></h4>
-				</div>
-			</li>
-		</ul>
-	</div>
-	<div class="pic-more-box">
-		<a class="pic-more" href="">加载更多<i class="iconfont">&#xe604;</i></a>
-	</div>
-	<!--/推荐话题-->
-	<!--教程-->
-	<div class="title-box clearfix">
-		<h3 class="tit-name"><a class="link" href="">教程</a></h3>
-	</div>
-	<ul class="tutorial-box">
-		<li class="tutorial-list">
-			<a class="tutorial-link" href="">
-				<h3 class="tutorial-name">干货！品牌视觉识别系统新手入门指南</h3>
-				<p class="tutorial-info">作者微博： @Jromore-阿漂 http://weibo.com/jromore 相关文章浅析平面</p>
-			</a>
-		</li>
-		<li class="tutorial-list">
-			<a class="tutorial-link" href="">
-				<h3 class="tutorial-name">酷！6个免费在线制作LOGO的网站</h3>
-				<p class="tutorial-info">一个好的logo可以即刻为您的品牌增加价值，但是往往我们创建一个logo的时候，</p>
-			</a>
-		</li>
-		<li class="tutorial-list">
-			<a class="tutorial-link" href="">
-				<h3 class="tutorial-name">给跪了！美丫姐带你看央视新LOGO背后的那些飞机稿！</h3>
-				<p class="tutorial-info">前几天，央视爸爸在多个社交平台上更换了自己从2000年开始使用的双线央视Logo往我们创建一个logo的时候，</p>
-			</a>
-		</li>
-		<li class="tutorial-list">
-			<a class="tutorial-link" href="">
-				<h3 class="tutorial-name">给跪了！美丫姐带你看央视新LOGO背后的那些飞机稿！</h3>
-				<p class="tutorial-info">前几天，央视爸爸在多个社交平台上更换了自己从2000年开始使用的双线央视Logo往我们创建一个logo的时候，</p>
-			</a>
-		</li>
-	</ul>
-	<div class="pic-more-box">
-		<a class="pic-more" href="">加载更多<i class="iconfont">&#xe604;</i></a>
-	</div>
-	<!--/教程-->
-	<!--活跃用户-->
-	<div class="title-box clearfix">
-		<h3 class="tit-name"><a class="link" href="">活跃用户</a></h3>
-	</div>
-	<div class="active-main swiper-container scroll_cont">
-		<ul class="active-user clearfix swiper-wrapper">
-			<li class="user-list swiper-slide">
-				<a class="user-img-box" href=""><img class="user-img" src="images/avatar_02.png"/></a>
-				<h3 class="user-name"><a class="link" href="">liwenfei1314</a></h3>
-				<p class="user-info">粉丝:<span class="c-blue">7</span>/素材:<span class="c-blue">3670</span></p>
-			</li>
-			<li class="user-list swiper-slide">
-				<a class="user-img-box" href=""><img class="user-img" src="images/avatar.png"/></a>
-				<h3 class="user-name"><a class="link" href="">文档文档好文档</a></h3>
-				<p class="user-info">粉丝:<span class="c-blue">7</span>/素材:<span class="c-blue">3670</span></p>
-			</li>
-			<li class="user-list swiper-slide">
-				<a class="user-img-box" href=""><img class="user-img" src="images/avatar_02.png"/></a>
-				<h3 class="user-name"><a class="link" href="">zhangkuan1436</a></h3>
-				<p class="user-info">粉丝:<span class="c-blue">7</span>/素材:<span class="c-blue">3670</span></p>
-			</li>
-			<li class="user-list swiper-slide">
-				<a class="user-img-box" href=""><img class="user-img" src="images/avatar.png"/></a>
-				<h3 class="user-name"><a class="link" href="">928834181</a></h3>
-				<p class="user-info">粉丝:<span class="c-blue">7</span>/素材:<span class="c-blue">3670</span></p>
-			</li>
-			<li class="user-list swiper-slide">
-				<a class="user-img-box" href=""><img class="user-img" src="images/avatar_02.png"/></a>
-				<h3 class="user-name"><a class="link" href="">1449388646</a></h3>
-				<p class="user-info">粉丝:<span class="c-blue">7</span>/素材:<span class="c-blue">3670</span></p>
-			</li>
-			<li class="user-list swiper-slide">
-				<a class="user-img-box" href=""><img class="user-img" src="images/avatar.png"/></a>
-				<h3 class="user-name"><a class="link" href="">秘书文档</a></h3>
-				<p class="user-info">粉丝:<span class="c-blue">7</span>/素材:<span class="c-blue">3670</span></p>
-			</li>
-		</ul>
-	</div>
-	<!--/活跃用户-->
+		<script src="js/swiper.min.js"></script>
+		<script>
+			//首焦
+			new Swiper('#index_swiper', {
+				pagination: '#index_pagination',
+				paginationClickable: true,
+				autoplay: 2500,
+				autoplayDisableOnInteraction: false
+			});
 
-	<script src="js/swiper.min.js"></script>
-	<script>
-	//首焦
-	new Swiper('#index_swiper',{
-        pagination: '#index_pagination',
-        paginationClickable: true,
-        autoplay: 2500,
-        autoplayDisableOnInteraction: false
-	});
-	
-	//news-toutiao
-	var swiper3 = new Swiper('#news_swiper', {
-	    direction: 'vertical',
-	    autoplay: 3000,
-	    autoplayDisableOnInteraction: false,
-	    loop: true
-	});
-	//
-	var mySwiper = new Swiper('.scroll_cont',{
-	    slidesPerView: 'auto',
-	    mousewheelControl: true,
-	    freeMode: true,
-		roundLengths : true, //防止文字模糊
-	});
-	</script>
-<!--/container-->
+			//news-toutiao
+			var swiper3 = new Swiper('#news_swiper', {
+				direction: 'vertical',
+				autoplay: 3000,
+				autoplayDisableOnInteraction: false,
+				loop: true
+			});
+			//
+			var mySwiper = new Swiper('.scroll_cont', {
+				slidesPerView: 'auto',
+				mousewheelControl: true,
+				freeMode: true,
+				roundLengths: true, //防止文字模糊
+			});
+		</script>
+		<!--/container-->
 
-<!--footer-->
-	<div class="footer">
-		<div class="foot-link">
-			<a class="link" href="">触屏版</a>
-			<span class="foot-line">|</span>
-			<a class="link c-red" href="">电脑版</a>
+		<!--footer-->
+		<div class="footer">
+			<div class="foot-link">
+				<a class="link" href="">触屏版</a>
+				<span class="foot-line">|</span>
+				<a class="link c-red" href="">电脑版</a>
+			</div>
+			<p class="foot-list">Copyright@ 2011-2017 帮帮创意网站版权所有 <a class="sitemap-link" href="">网站地图</a></p>
+			<p class="foot-list">经营许可证编号:京ICP备14007087号-3</p>
 		</div>
-		<p class="foot-list">Copyright@ 2011-2017 帮帮创意网站版权所有 <a class="sitemap-link" href="">网站地图</a></p>
-		<p class="foot-list">经营许可证编号:京ICP备14007087号-3</p>
+		<!--/footer-->
 	</div>
-<!--/footer-->
-</div>
 
 </body>
+
 </html>
