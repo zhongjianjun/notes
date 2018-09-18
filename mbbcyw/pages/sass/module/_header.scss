@@ -33,12 +33,12 @@
 .header-02 .head-menu .iconfont{font-size:1.6rem;padding-right:.6rem}
 
 .header-02 .menu-link-box{position:absolute;right:.4rem;top:4rem;display:none;z-index:2;}
-.header-02 .menu-link-box .menu-link{display:block;background-color:#303030;color:#fff;padding:0 2rem;font-size:1.4rem;line-height:3rem;min-width: 5.4rem;}
+.header-02 .menu-link-box .menu-link{display:block;background-color:#303030;color:#fff;padding:0 2rem;font-size:1.4rem;line-height:3rem;min-width: 5.4rem;border-top:1px solid #8e8e8e;}
 .header-02 .menu-link-box .menu-arrow{border-bottom:.6rem solid #303030;border-left:.6rem solid transparent;border-right:.6rem solid transparent;position:absolute;top:-.6rem;left:60%;}
-.header-02 .menu-link-box .menu-link:last-child{border-top:1px solid #8e8e8e;border-radius: 0 0 .3rem .3rem}
+.header-02 .menu-link-box .menu-link:last-child{border-radius: 0 0 .3rem .3rem}
 .header-02 .menu-link-box .menu-link:first-child,
-.header-02 .menu-link-box .first-menu{border-radius:.3rem .3rem 0 0 }
-.header-02 .menu-link-box .menu-link.select{background-color: #3b3b3b}
+.header-02 .menu-link-box .first-menu{border-radius:.3rem .3rem 0 0;border-top: 0 none; }
+.header-02 .menu-link-box .menu-link.select,.header-02 .menu-link-box .menu-link:hover{background-color: #3b3b3b}
 /*分享*/
 .share-s1{position:fixed;width:100%;left:0;bottom:0;background:#f3f3f3;z-index:9999;display: none;}
 .share-s1 .shareCon{}

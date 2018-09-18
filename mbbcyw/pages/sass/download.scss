@@ -15,7 +15,7 @@
 .download-main .module-tit{color: #727272;font-size: 1.3rem;margin-top: .6rem;}
 .payment-box{padding-top: .6rem;}
 .payment-box .payment-list{float: left;}
-.payment-box .payment-img{display: block;border:2px solid #dcdcdc;margin-right: 4px;padding: 0px 6px;border-radius: 4px;height: 36px;}
+.payment-box .payment-img{display: block;border:2px solid #dcdcdc;margin-right: 4px;padding: 0px 6px;border-radius: 4px;height: 3.6rem;}
 .payment-box .zfb{background-color: #fff7e6;}
 .payment-box .checked .payment-img{border-color: #f7372c}
 .download-main .needs{color: #727272;font-size: 1.3rem;}
@@ -40,8 +40,8 @@
 .down-btn-box{padding:20px 0 20px;text-align: center;}
 .down-btn-box .down-btn{display: inline-block;
     min-width: 30%;
-    height: 40px;
-    line-height: 40px;
+    height: 3.8rem;
+    line-height: 3.8rem;
     text-align: center;
     color: #fff;
     font-size: 1.4rem;
@@ -49,7 +49,9 @@
     background-color: #1581f4;
     padding: 0 1rem;
     border-radius: 3px;
-    margin-bottom: .6rem;}
+    margin-bottom: .6rem;
+
+}
 .down-btn-box .btn-l{background-color:#f7372c}
 .down-btn-box .btn-r{background-color:#199bd6}
 .download-box .down-btn-box .bc-g {
