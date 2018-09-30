@@ -39,11 +39,13 @@
 .header-nav .nav-item .link:hover .site-icon,.header-nav .nav-list .select .site-icon{color:#fff;}
 
 .header-nav .more-cont{position:absolute;left:0px;top:53px;padding-top:3px;z-index:2;display:none}
-.header-nav .nav-more-box{padding:10px 10% 10px 15%;width:75%;background-color:#f6f6f6;overflow:hidden;}
-.header-nav .more-list{font-size:14px;float:left;height:30px;line-height:30px;width:100%;}
-.header-nav .more-link{color:#7c7c7c;}
-.header-nav .more-link:hover{color:#f7372c;}
+.header-nav .nav-more-box{background-color:#f6f6f6;overflow:hidden;}
+.header-nav .more-list{font-size:14px;float:left;height:40px;line-height:40px;width:100%;}
+.header-nav .more-link{color:#7c7c7c;display: block;text-indent: 15%;}
+.header-nav .more-link:hover{background-color:#f7372c;color: #fff;}
 .header-nav .nav-list .select .more-cont{display:block}
+.header-nav .vip-item{float: left; font-size: 18px; height: 53px; line-height: 53px; position: relative; margin-left: 50px;}
+.header-nav .vip-item .link{height: 54px;}
 /*分类导航*/
 .menu-list-box{position:absolute;left:0;top:53px;height:505px;width:100%;color:#fff;display:none;padding-top:3px;z-index: 2;}
 .menu-list-box.select{display:block}
